@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/daftar_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.37"
+        android:text="Daftar Judul"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="100dp"
+
+        android:scaleType="centerInside"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/daftar_deskripsi"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/daftar_judul"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/daftar_icon"
+        android:ellipsize="end"
+        android:text="Ini adalah contoh text deskripsi "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.05"
+        android:background="#11a723"
+        android:visibility="visible" />
+
+</LinearLayout>
